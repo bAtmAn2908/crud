@@ -36,7 +36,7 @@ export const UpdateUser = () => {
     
     let uId = useParams().id;
     const getUserbyId = async()=>{
-        await axios.get("http://localhost:8080/users/"+uId).then(res=>{
+        await axios.get("http://localhost:808/users/"+uId).then(res=>{
             setuser(res.data)
         })
     }
